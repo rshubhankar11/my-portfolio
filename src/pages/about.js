@@ -3,7 +3,7 @@ import Base from "../components/nav/Base";
 
 const About = () => {
   return (
-    <Base>
+    <Base data={"abouts"}>
       <h1>This is About page</h1>
     </Base>
   );

@@ -5,6 +5,7 @@ import MyNavbar from "./components/nav/MyNavbar";
 import About from "./pages/about";
 import MyCard from "./components/cards/MyCard";
 import Profile from "./pages/profile";
+import Contact from "./pages/contact";
 
 const App = () => {
   const post1 = {
@@ -16,12 +17,14 @@ const App = () => {
   };
   return (
     <BrowserRouter>
+      <MyCard />
       <MyNavbar />
       <Routes>
         <Route path="/" element={<Profile />} />
-        <Route path="/cards" element={<MyCard />} />
+        {/* <Route path="/cards" element={<MyCard text={text} delay={delay} />} /> */}
         <Route path="/card" element={<BlogPost {...post1} />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );
