@@ -1,13 +1,13 @@
-import React from "react";
+import { Container } from "react-bootstrap";
 import Footer from "./Footer";
 
 import { TypeAnimation } from "react-type-animation";
-import { Container } from "react-bootstrap";
 
 const Base = ({ data, children }) => {
   let MyStyle = {
     height: "200px",
   };
+
   return (
     <div
       style={{
@@ -21,7 +21,7 @@ const Base = ({ data, children }) => {
       >
         <TypeAnimation
           sequence={[
-            "Hello There 🙋‍♂️", // Types 'One'
+            `Hello there 🙋‍♂️`, // Types 'One'
             2000, // Waits 1s
             "Am Rabiroshan Shubhankar 🧑‍💻", // Deletes 'One' and types 'Two'
             3000, // Waits 2s
@@ -37,6 +37,7 @@ const Base = ({ data, children }) => {
           style={{ fontSize: "2em", display: "inline-block" }}
         />
       </Container>
+
       {children}
       <Footer />
     </div>

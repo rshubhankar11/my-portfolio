@@ -3,15 +3,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import my_logo from "../../asserts/my_logo1.png";
 import { NavLink } from "react-router-dom";
+import cv from "../../asserts/CV_V2023.pdf";
 
 const MyNavbar = () => {
   // uder this all methods
   //function to download cv
   const downloadCV = () => {
-    const url =
-      "https://doc-10-5g-docs.googleusercontent.com/docs/securesc/rp0d3j0urgkg1nsfc75v0767n86cn68r/9cv1ie7e311i1fnmlksietal6m5smn0m/1681416525000/12354902163927569137/12354902163927569137/1nloQgj8zRJr7xSr5BZpq7HzNR8vkootV?e=download&ax=ALy03A5-kx98r15LETl4y7MG0z9_ZqnLy-vuiUX4SNP_VFcbYCnt3IU039y7R5F_Or4eiKpMSFVVnsfk0xBGBHCyhg7BiWPGEJfOLRwrqleP1toT2ADuk-z56Ph1_AZKAGwqxSdQ0NjVHXxEG6QjSs8YcAtcaW9wmeB62qTA3yjJRZwvGVMfdbDy9D2lUgsplMrPRMjiqoXW0JRHbNS7ZJll_u-ilR6UINFq8AXF211-M9bg0Je0eCGdBLwihH9LUHwJjxaDDgn7ZzCprLZi3SsWi0FLEKoTdNPDAyFtrhj8ApqpowgPOqUBCKg0etPf2kMRizogpMzXcRo93MCUxg9dBFxlf2CsWcvpMOrR0eGNQWtjRbkEGJmSVTULlilCLcFKA3pY_rOaWBESIdgG4CHSCsng74FoMz8FUjfTEEijsZeR-nCSQqn0Oe64iqeBEgR-k2C50PM2Y2EM-OvAeT3FVwtpf2ZU633g9Q3xxqAkeFVOedY2VRczCkZ--3OzUfARzvpYWA32f99O9Vatzt3TUakfKtV3eVuBkdrUcytr3fZwZJcVt5ZzQFHbM4T6iHiSQNNbrJ83bABZODhkHEbh-QpWMWywrZEvMUOYtaZHj_376u15Us02bgecJmwtUn5gWHujv-0nCJtxuBNQL0GIRB7eaqiEZSZQJARni6CwBAR7aKhG4qlhppJXK0M3hy0QImNXI_LVqxFe60oMdIUZe12I-hldtF5kBgUGXWjAQZpvTUgYA665_mXuC9JafOemTI4dgSriKkrdwTZXVSeTqShlMyuZKybk_vWIiqJra1LNKO7qDA9zWN5fWqryk1MdPYIZMQH6dG-z-VJgr6zQ8J49uO_WF6_uyGoXVQSF6OD_GesMGHjcnaISW6YQw-k&uuid=b05011b4-7fab-4bbe-8091-acacd43c4675&authuser=0&nonce=srmobakeb9gnk&user=12354902163927569137&hash=8us96fag0tnhojrd2i6aaj31oiqc06ss";
-    // const url =
-    //   "https://drive.google.com/file/d/1nloQgj8zRJr7xSr5BZpq7HzNR8vkootV/view?usp=share_link";
+    const url = cv;
+
     const link = document.createElement("a");
     link.href = url;
     link.setAttribute("download", "My CV.pdf");
